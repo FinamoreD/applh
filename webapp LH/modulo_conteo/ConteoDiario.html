@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conteo Diario</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Conteo Diario</h1>
+      <form id="conteoForm">
+        <div class="form-group">
+          <label for="bollo">Bollos:</label>
+          <input type="number" id="input-bollos" name="bollo" />
+        </div>
+        <div class="form-group">
+          <label for="bolloJr">Bollos Jr:</label>
+          <input type="number" id="input-bollos-jr" name="bolloJr" />
+        </div>
+        <div class="form-group">
+          <label for="pan">Panes:</label>
+          <input type="number" id="input-panes" name="pan" />
+        </div>
+        <div class="form-group">
+          <label for="panJr">Panes Jr:</label>
+          <input type="number" id="input-panes-jr" name="panJr" />
+        </div>
+        <div class="form-group">
+          <label for="papa">Papas:</label>
+          <input type="number" id="input-papas" name="papa" />
+        </div>
+        <div class="button__container">
+          <button type="button" id="obtenerConteo">Obtener conteo</button>
+          <button type="button" id="copiarConteo">Copiar conteo</button>
+        </div>
+      </form>
+      <textarea placeholder="Aquí se mostrará el conteo" id="textoGenerado" readonly></textarea>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
